@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
@@ -40,6 +40,7 @@ function navbar() {
     const [isDropdownVisible, setIsDropdownVisible] = useState(false);
     const [isMenuVisible, setIsMenuVisible] = useState(false);
     const [isSupport, setIsSupport] = useState(false);
+    const [scrolling, setScrolling] = useState(false);  // Navbar scrolled
 
 
     const handleSearch = () => {
@@ -97,8 +98,33 @@ function navbar() {
     setIsDropdownVisible(false)
   };
 
+  // Navbar scrolled
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const navbarStyle = {
+    marginTop: scrolling ? '0' : '4px',
+    transition: 'margin-top 0.3s ease',
+    top: '0',
+    left: '0',
+  }
+
   return (
-    <div className="navbar">
+    <div className="navbar" style={navbarStyle}>
         <div className="navbar-left-container">
             {logo.map ((l) => (
                 <Link href="/">

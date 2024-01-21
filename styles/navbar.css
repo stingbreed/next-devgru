@@ -1,15 +1,16 @@
 .navbar {
     background: white;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 5%;
     height: 10vh;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    position: fixed;
     z-index: 1000;
+    position: fixed;
+    box-shadow: 0 0 5px 1px teal;
   }
   
   .navbar-left-container {
@@ -147,7 +148,7 @@
     padding: 5px;
     box-shadow: 0 0 5px 1px teal;
     border-radius: 5px;
-    right: 0;
+    right: 4%;
   }
 
   .account-links {
