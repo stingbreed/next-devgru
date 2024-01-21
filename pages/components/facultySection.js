@@ -13,10 +13,10 @@ function facultySection() {
         <div className="faculty-section-container-div">
             <h1 className="faculty-section-header">Become a part of <br></br>our faculty</h1>
             <p className="faculty-section-para">
-            vibrant and diverse intellectual community. 
+            Meet our vibrant and diverse intellectual community. 
             With a passion for discovery and a drive for innovation, 
             our faculty fosters an environment that encourages critical thinking, 
-            creativity, and collaboration.|
+            creativity, and collaboration.
             </p>
         </div>
         <div className="faculty-section-div2">

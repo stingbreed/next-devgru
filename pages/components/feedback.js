@@ -30,7 +30,7 @@ const FeedbackSection = () => {
           className="feedback-textarea"
         ></textarea>
 
-        <button className="feedback-btn" type="submit">Submit Feedback</button>
+        <button className="feedback-btn" type="submit">SUBMIT</button>
       </form>
     </div>
     </div>

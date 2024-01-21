@@ -73,7 +73,7 @@ function footer() {
                         type="email"
                     />
                     <span className="footer-span">By submitting, I agree to the <Link href="/terms" className="legal-links">Terns and conditions</Link></span>
-                    <button className="footer-subscribe-btn">Join</button>
+                    <button className="footer-subscribe-btn">JOIN</button>
                 </form>
             </div>
         </div>
