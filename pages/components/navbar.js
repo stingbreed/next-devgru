@@ -193,7 +193,7 @@ function navbar() {
             ) : (
                 <Link href="" className="nav-right-links nav-links" title="search">
                     <SearchTwoToneIcon 
-                        style={{fontSize: '36px', color: 'black', background: 'white', padding: '0'}}
+                        style={{fontSize: '36px', color: 'rgb(0, 65, 65)', background: 'white', padding: '0'}}
                         onClick={handleSearch}
                     />
                 </Link>
@@ -201,7 +201,7 @@ function navbar() {
             {!isDropdownVisible ? (
                 <Link href="" className="nav-right-links nav-links" title="account">
                     <AccountCircleTwoToneIcon 
-                        style={{fontSize: '36px', color: 'black', background: 'white', padding: '0'}}
+                        style={{fontSize: '36px', color: 'rgb(0, 65, 65)', background: 'white', padding: '0'}}
                         onClick={handleAccountClick}
                     />
                 </Link>
@@ -229,7 +229,7 @@ function navbar() {
                     />
                 ) : (
                     <MenuTwoToneIcon 
-                        style={{fontSize: '46px', color: 'black', background: 'white', padding: '0', fontWeight: 'bold'}}
+                        style={{fontSize: '46px', color: 'rgb(0, 65, 65)', background: 'white', padding: '0', fontWeight: 'bold'}}
                         onClick={handleMenuClick}
                     />
                 )}

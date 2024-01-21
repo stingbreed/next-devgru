@@ -193,18 +193,17 @@
   }
 
   .sign-in-btn {
-    height: 40px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
     overflow: hidden;
     background: linear-gradient(to left, whitesmoke 50%, teal 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
-    border: none;
-    box-shadow: 0 0 5px 1px teal;
+    border: 2px solid teal;
     color: teal;
     margin-top: 20px;
+    padding: 15px 20px;
   }
 
   .sign-in-btn:hover {

@@ -41,7 +41,6 @@ function footer() {
                     </Link>
                 </div>
             </div>
-            <div className="footer-links-div"></div>
             <div className="footer-links-div">
                 <h2 className="legal-header">Support</h2>
                 <Link href="/contact" className="legal-links">Contact us</Link>
@@ -59,6 +58,23 @@ function footer() {
                 <h2 className="legal-header">Legal</h2>
                 <Link href="/terms" className="legal-links">Terns and conditions</Link>
                 <Link href="/privacy" className="legal-links">Privacy policy</Link>
+            </div>
+            <div className="footer-links-div">
+                <h2 className="legal-header">Subscribe to our newsletter</h2>
+                <p className="legal-para">
+                    Access exclusive subscriber deals and be the 
+                    first to receive updates on new sales and updates.
+                </p>
+                <form className="footer-subscribe-form">
+                    <label className="footer-label">Your Email</label>
+                    <input 
+                        className="footer-input"
+                        placeholder='example@email.com'
+                        type="email"
+                    />
+                    <span className="footer-span">By submitting, I agree to the <Link href="/terms" className="legal-links">Terns and conditions</Link></span>
+                    <button className="footer-subscribe-btn">Join</button>
+                </form>
             </div>
         </div>
         <div className="footer-foot">

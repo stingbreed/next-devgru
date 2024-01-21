@@ -44,7 +44,7 @@ function featuredComments() {
                     <h1 className="featured-display-content-header">{c.name}</h1>
                     <p className="featured-display-content-user">{c.username}</p>
                     <p className="featured-display-content-comment">{c.comment}</p>
-                    <h1 className="featured-display-content-quote"><FormatQuoteIcon style={{ fontSize: '100px' }} /></h1>
+                    <h1 className="featured-display-content-quote"><FormatQuoteIcon style={{ fontSize: '100px', background: 'white' }} /></h1>
                 </Link>
             ))}
         </div>
