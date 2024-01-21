@@ -190,10 +190,10 @@
     position: absolute;
     top: 68px;
     left: auto;
-    right: -70px;
+    right: 0;
     width: 400px;
     height: 90vh;
-    z-index: 1000;
+    z-index: 2000;
     text-align: right;
   }
 
