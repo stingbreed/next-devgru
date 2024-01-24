@@ -110,6 +110,42 @@ const featuredPosts = [
             },
         ],
     },
+    {
+        image: '/images/david.jpg',
+        cat: 'Work-life Balance',
+        date: 'Jan 20, 2024',
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        author: [
+            {
+                image: '/images/david.jpg',
+                name: 'Jon Snow',
+            },
+        ],
+    },
+    {
+        image: '/images/music.jpg',
+        cat: 'Work-life Balance',
+        date: 'Jan 20, 2024',
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        author: [
+            {
+                image: '/images/david.jpg',
+                name: 'Jon Snow',
+            },
+        ],
+    },
+    {
+        image: '/images/david.jpg',
+        cat: 'Work-life Balance',
+        date: 'Jan 20, 2024',
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit, Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        author: [
+            {
+                image: '/images/david.jpg',
+                name: 'Jon Snow',
+            },
+        ],
+    },
     
 ]
 

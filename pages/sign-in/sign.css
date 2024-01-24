@@ -229,13 +229,12 @@
     background-color: #4285F4; /* Google Blue */
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
     justify-content: center;
     align-items: center;
     gap: 20px;
     height: 50px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 50px;
   }
   
   .facebook-link {

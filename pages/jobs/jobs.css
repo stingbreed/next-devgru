@@ -1,0 +1,139 @@
+.jobs-page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.jobs-banner-img-div {
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.jobs-banner {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: 1;
+    display: flex;
+}
+
+.jobs-header {
+    position: absolute;
+    z-index: 500;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background: none;
+    height: 10vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+    font-size: 40px;
+}
+
+.jobs-header-para {
+    position: absolute;
+    z-index: 500;
+    bottom: 50%;
+    width: 50%;
+    text-align: center;
+    color: whitesmoke;
+    background: none;
+    height: fit-content;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0);
+}
+
+.jobs-container {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    z-index: 200;
+    position: absolute;
+}
+
+.jobs-holder {
+    width: 95%;
+    background: white;
+    margin: -100px auto 100px;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 0 10px 1px rgb(228, 228, 228);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.jobs-left {
+    height: auto;
+    width: 600px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: none;
+}
+
+.jobs-right {
+    height: 30vh;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.jobs-display-div {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 1px rgb(228, 228, 228);
+    transition: .3s;
+}
+
+.jobs-display-div:hover {
+    box-shadow: 0 0 10px 1px teal;
+    cursor: pointer;
+}
+
+.jobs-display-div-header {
+    background: inherit;
+}
+
+.jobs-display-div-div {
+    background: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobs-display-div-btn {
+    background: inherit;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background: teal;
+    color: whitesmoke;
+    padding: 5px 10px;
+}
+
+.jobs-display-div-para {
+    background: inherit;
+}
+
+.jobs-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    background: inherit;
+}
+
+.pagination-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
