@@ -26,6 +26,10 @@ function signIn() {
         <div className="form-top-div">
           <h1 className="form-top-div-header">Sign In</h1>
           <p className="form-top-div-para">Please input your credentials</p>
+          <div className="social-links">
+            <a href="#" className="google-link"><img src="/images/google.png" alt="login" className="google-img"/></a>
+            <a href="#" className="facebook-link"><FacebookTwoToneIcon style={{ color: '#3b5998', background: 'inherit', fontSize: '32px', borderRadius: '50px' }} /></a>
+          </div>
         </div>
         <form className="sign-in-form">
           <label className="sign-in-label">Email</label>
@@ -52,10 +56,10 @@ function signIn() {
             </button>
           </div>
           <button className="sign-in-btn" type="submit">SIGN IN</button>
-          <div className="social-links">
+          {/* <div className="social-links">
             <a href="#" className="google-link">Google <img src="/images/google.png" alt="login" className="google-img"/></a>
             <a href="#" className="facebook-link">Facebook <FacebookTwoToneIcon style={{ color: 'white', background: 'none', fontSize: '30px' }} /></a>
-          </div>
+          </div> */}
           <p className="signup-text">Don't have an account? <a href="/sign-up" class="signup-link">Sign up</a></p>
           <p className="signup-text">Forgot your password? <a href="/change-password" class="signup-link">Reset password</a></p>
         </form>

@@ -237,6 +237,7 @@ function navbar() {
             {isMenuVisible && (
                 <Slide direction="right" duration={200} className="slide-menu-style">
                     <div className="nav-menu-div">
+                    <h1 className="category-header">Categories</h1>
                         {categories.map((category, index) => (
                             <li key={index} className="category-list">
                                 <Link href="#" className="category-links">

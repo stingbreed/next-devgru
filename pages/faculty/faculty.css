@@ -1,0 +1,34 @@
+.faculty-container {
+    height: auto;
+}
+
+/* BANNER */
+
+.image-div {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.faculty-banner {
+    width: 100%;
+    height: 300px;
+}
+
+/* MEMBERS */
+
+.members-div {
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.members-container {
+    height: 50vh;
+    margin-top: -100px;
+    background: white;
+    z-index: 200;
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+}

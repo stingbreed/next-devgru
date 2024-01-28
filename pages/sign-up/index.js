@@ -26,6 +26,10 @@ function signUp() {
         <div className="form-top-div">
           <h1 className="form-top-div-header">Sign Up</h1>
           <p className="form-top-div-para">Enter your credentials to register</p>
+          <div className="social-links">
+            <a href="#" className="google-link"><img src="/images/google.png" alt="login" className="google-img"/></a>
+            <a href="#" className="facebook-link"><FacebookTwoToneIcon style={{ color: '#3b5998', background: 'inherit', fontSize: '32px', borderRadius: '50px' }} /></a>
+          </div>
         </div>
         <form className="sign-in-form">
           <label className="sign-in-label">Full name</label>
@@ -62,10 +66,10 @@ function signUp() {
             <label for="agreeCheckbox" class="agree-label">I agree to the terms and conditions</label>
           </div>
           <button className="sign-in-btn">SIGN UP</button>
-          <div className="social-links">
+          {/* <div className="social-links">
             <a href="#" className="google-link">Google <img src="/images/google.png" alt="login" className="google-img"/></a>
             <a href="#" className="facebook-link">Facebook <FacebookTwoToneIcon style={{ color: 'white', background: 'none', fontSize: '30px' }} /></a>
-          </div>
+          </div> */}
           <p className="signup-text">Already have an account? <a href="/sign-in" class="signup-link">Sign in</a></p>
         </form>
       </div>

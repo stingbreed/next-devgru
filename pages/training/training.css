@@ -1,0 +1,10 @@
+.training-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bold;
+    font-size: 100px;
+    background-image: url(/images/reset.jpg);
+    color: white;
+}

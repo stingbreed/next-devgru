@@ -92,7 +92,7 @@ render() {
       </div>
 
       <div className="banner-right-div">
-            <p className="banner-right-div-header">TRENDING ARTICLES</p>
+            <p className="banner-right-div-header">POPULAR ARTICLES</p>
             {bannerDisplay.map((b) => (
                 <Link href="" className="trending-div">
                     <img src={b.image} alt="image" className="trending-img" />
