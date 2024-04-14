@@ -2,7 +2,7 @@
     background: white;
     margin: 0 auto;
     padding: 0 5%;
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,12 +18,25 @@
     display: flex;
     gap: 10px;
     background: white;
-    height: 10vh;
+    height: 100%;
+    margin-bottom: auto;
+  }
+
+  .bottom-navbar-para {
+    background: none;
+    font-size: 50px;
+    width: 90%;
+    margin: auto;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
   }
   
   .site-logo {
-    width: 180px;
-    height: 10vh;
+    width: auto;
+    height: 100%;
   }
   
   .navbar-left-links {
@@ -54,6 +67,8 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: auto;
+    height: 100%;
   }
 
   /* Support Links */

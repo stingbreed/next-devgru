@@ -119,7 +119,7 @@ function jobs() {
         <Navbar />
       </div>
       <div className="jobs-banner-img-div">
-        <img src="/images/reset.jpg" alt="Jobs banner" className="jobs-banner" />
+        <img src="/images/job.jpg" alt="Jobs banner" className="jobs-banner" />
         <h1 className="jobs-header">The DEVGRU Jobs Portal</h1>
         <p className="jobs-header-para">Unlock Your Career Potential: Explore Exciting Opportunities on Our Job Portal!.</p>
       </div>

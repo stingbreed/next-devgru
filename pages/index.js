@@ -14,6 +14,16 @@ function HomePage() {
       <div className="navbar-div">
         <Navbar />
       </div>
+      <div className="bottom-navbar-div">
+            <p className="bottom-navbar-para">The&nbsp;
+              <span style={{ color : 'red' }}>D</span>
+              <span style={{ color : 'orange' }}>E</span>
+              <span style={{ color : 'green' }}>V</span>
+              <span style={{ color : 'blue' }}>G</span>
+              <span style={{ color : 'yellow' }}>R</span>
+              <span style={{ color : 'purple' }}>U</span>&nbsp;Advantage Community
+            </p>
+        </div>
       <div className="banner-div">
         <Banner />
       </div>
