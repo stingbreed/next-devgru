@@ -15,14 +15,15 @@ function HomePage() {
         <Navbar />
       </div>
       <div className="bottom-navbar-div">
-            <p className="bottom-navbar-para">The&nbsp;
+            <p className="bottom-navbar-para">
               <span style={{ color : 'red' }}>D</span>
               <span style={{ color : 'orange' }}>E</span>
               <span style={{ color : 'green' }}>V</span>
               <span style={{ color : 'blue' }}>G</span>
               <span style={{ color : 'yellow' }}>R</span>
-              <span style={{ color : 'purple' }}>U</span>&nbsp;Advantage Community
+              <span style={{ color : 'purple' }}>U</span>
             </p>
+            <p className="bottom-navbar-para2">Advancing your career life through professional insights.</p>
         </div>
       <div className="banner-div">
         <Banner />

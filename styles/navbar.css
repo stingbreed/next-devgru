@@ -22,16 +22,29 @@
     margin-bottom: auto;
   }
 
+  .bottom-navbar-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+
   .bottom-navbar-para {
     background: none;
-    font-size: 50px;
-    width: 90%;
-    margin: auto;
-    height: 20vh;
+    font-size: 100px;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+    padding: 0;
+  }
+
+  .bottom-navbar-para2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
   }
   
   .site-logo {
@@ -154,7 +167,7 @@
 
   .slide-custom-style {
     position: absolute;
-    top: 65px;
+    top: 58px;
     left: auto;
     width: 200px;
     background: whitesmoke;
@@ -216,7 +229,7 @@
 
   .slide-menu-style {
     position: absolute;
-    top: 68px;
+    top: 58px;
     left: auto;
     right: 0;
     width: 400px;
