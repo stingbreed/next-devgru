@@ -135,16 +135,16 @@ function navbar() {
             {linksVisible && (
               <div className="navbar-left-links">
                 <Link href="/faculty" className="nav-left-links nav-links">
-                  Faculty
+                  FACULTY
                 </Link>
                 <Link href="/training" className="nav-left-links nav-links">
-                  Training
+                  TRAINING
                 </Link>
                 <Link href="/jobs" className="nav-left-links nav-links">
-                  Jobs
+                  JOBS
                 </Link>
                 <Link href="/about" className="nav-left-links nav-links">
-                  About
+                  ABOUT
                 </Link>
                 {!isSupport ? (
                     <Link 
@@ -152,7 +152,7 @@ function navbar() {
                         className="nav-left-links nav-links"
                         onClick={handleSupportClick}
                         >
-                        Support
+                        SUPPORT
                     </Link>
                 ) : (
                     <CloseTwoToneIcon
@@ -163,10 +163,10 @@ function navbar() {
                 {isSupport && (
                     <Zoom duration={200} className="slide-support-style">
                         <div className="support-dropdown">
-                            <Link href="/contact" className="support-links">Contact Us</Link>
-                            <Link href="/help" className="support-links">Help Center</Link>
+                            <Link href="/contact" className="support-links">CONTACT US</Link>
+                            <Link href="/help" className="support-links">HELP CENTER</Link>
                             <Link href="/FAQ" className="support-links">FAQ</Link>
-                            <Link href="/privacy" className="support-links">Privacy</Link>
+                            <Link href="/privacy" className="support-links">PRIVACY</Link>
                         </div>
                     </Zoom>
                 )}
@@ -237,7 +237,7 @@ function navbar() {
             {isMenuVisible && (
                 <Slide direction="right" duration={200} className="slide-menu-style">
                     <div className="nav-menu-div">
-                    <h1 className="category-header">Categories</h1>
+                    <h1 className="category-header">CATEGORIES</h1>
                         {categories.map((category, index) => (
                             <li key={index} className="category-list">
                                 <Link href="#" className="category-links">

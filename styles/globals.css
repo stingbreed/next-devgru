@@ -40,31 +40,22 @@ h6 {
 
 .banner-div {
   width: 90%;
-  height: auto;
+  height: 90vh;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .banner-container {
   display: flex;
-  height: auto;
-  padding: 20px 0;
+  height: 100%;
+  padding: 0;
   margin: 0;
   width: 100%;
   justify-content: left;
 }
 
-.banner-left-div {
-  width: 70%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .banner-right-div {
-  width: 30%;
+  width: 100%;
   background: linear-gradient(to right, #008080, #00CED1);
   height: auto;
   display: flex;
@@ -87,19 +78,120 @@ h6 {
 }
 
 .trending-div {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-  height: fit-content;
-  background: inherit;
+  height: auto;
   margin: 0 auto;
   justify-content: center;
 }
 
+.trending-img-1 {
+  width: 50%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .trending-img {
-  width: 160px;
-  height: 100px;
+  width: 95%;
+  height: 150px;
+  object-position: top;
+  object-fit: cover;
   border-radius: 10px;
+}
+
+.trending-top-div {
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.trending-bottom-div {
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.trending-top-link {
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.trending-content-author {
+  background: none;
+  font-weight: 700;
+}
+
+.trending-content-numbers {
+  background: none;
+  font-weight: 700;
+}
+
+.trending-content-header {
+  background: none;
+  font-weight: bold;
+}
+
+.trending-content-div {
+  width: 50%;
+  background: teal;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.popular-cards-link {
+  height: 300px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-decoration: none;
+} 
+
+.popular-cards {
+  height: 300px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 0 5px 1px rgb(225, 225, 225);
+  align-items: center;
+  padding: 5px 0;
+}
+
+.trending-bottom-header {
+  background: none;
+  font-size: 16px;
+  width: 95%;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px; */
+}
+
+.trending-bottom-author {
+  text-align: left;
+  width: 95%;
+  background: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
 }
 
 .trending-div-content {
@@ -134,8 +226,7 @@ h6 {
 /* BANNER */
 
 .main-slider {
-  width: 98%;
-  height: auto;
+  width: 800px;
   padding: 0;
   display: flex;
   justify-content: left;
@@ -145,39 +236,35 @@ h6 {
 }
 
 .slider-div-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .banner-slider-link {
-  width: fit-content;
   display: flex;
   justify-content: left;
-  align-items: end;
   width: 100%;
   padding: 0;
   margin: 0;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
 }
 
 .banner-link-description {
-  position: absolute;
+  position: relative;
   background: none;
-  margin-left: 20px;
-  width: 90%;
+  width: 100%;
 }
 
 .banner-link-header {
-  background: none;
-  color: whitesmoke;
-  width: 80%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0);
+  font-weight: bold;
 }
 
 .banner-img {
-  width: 100%;
-  height: 75vh;
+  width: 800px;
+  height: 60vh;
   margin: 0;
   padding: 0;
   object-fit: cover;
@@ -186,35 +273,43 @@ h6 {
 }
 
 .thumbnail-slider {
-  width: 70%;
-  height: fit-content;
   display: flex;
-  background: teal;
-  justify-content: center;
-  align-items: center;
-  margin-right: auto;
-  margin-top: auto;
+  flex-direction: column;
+  height: 100%;
+  width: 35%;
 }
 
-.thumbnail-div-container {
-  width: 100%;
+.thumbnail-link-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+}
+
+.thumbnail-link-content {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   height: 100%;
 }
 
-.slick-slide > div {
-  margin: 0 5px;
-}
-
 .thumbnail-img {
-  height: 10vh;
+  height: 120px;
   object-fit: cover;
   object-position: top;
-  width: 100%;
+  width: 200px;
   border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.thumbnail-link-header {
+  width: 250px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.latest-span {
+  font-size: 14px;
 }
 
 
@@ -261,7 +356,7 @@ h6 {
   margin: 150px auto 100PX;
 }
 
-.featured-header {
+/* .featured-header {
   background: linear-gradient(to right, #008080, #00CED1);
   text-align: center;
   padding: 20px 0;
@@ -270,14 +365,14 @@ h6 {
   border-bottom: 2px solid #2980b9;
   border-radius: 5PX;
   margin-bottom: 50px;
-}
+} */
 
 .featured-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   place-items: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
 
 .featured-content {
@@ -285,13 +380,13 @@ h6 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px;
+  padding: 0;
   border-radius: 20px;
 }
 
 .featured-img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   object-position: top;
   border-radius: 10px;
@@ -315,15 +410,16 @@ h6 {
   background: linear-gradient(to right, #008080, #00CED1);
   padding: 5px 10px;
   border-radius: 10px;
+  font-weight: 800;
 }
 
 .featured-title {
   text-decoration: none;
   color: black;
-  width: 95%;
+  width: 100%;
   height: auto;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -334,8 +430,8 @@ h6 {
 }
 
 .featured-author-img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   object-fit: cover;
   object-position: top;

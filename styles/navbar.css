@@ -68,6 +68,7 @@
     color: rgb(0, 65, 65);
     font-weight: 600;
     position: relative;
+    font-size: 14PX;
   }
 
   .nav-links:hover {
@@ -88,13 +89,12 @@
 
   .slide-support-style {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: auto;
-    right: -23%;
+    right: -18%;
     height: fit-content;
-    width: 200px;
-    box-shadow: 0 0 5px 1px teal;
-    border-radius: 5px;
+    width: 150px;
+    border-radius: 10px;
     padding: 0;
   }
 
@@ -107,14 +107,15 @@
     text-decoration: none;
     color: rgb(0, 65, 65);
     background: whitesmoke;
-    padding: 15px 20px;
+    padding: 12PX 15px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     overflow: hidden;
     background: linear-gradient(to left, whitesmoke 50%, teal 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
-    box-shadow: 0 0 5px 1px teal;
+    box-shadow: 0 0 1px 1px teal;
+    border-radius: 5px;
   }
 
   .support-links:hover {
@@ -157,7 +158,7 @@
 
   .account-dropdown {
     left: auto;
-    width: 100%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     height: fit-content;
@@ -167,31 +168,31 @@
 
   .slide-custom-style {
     position: absolute;
-    top: 58px;
+    top: 54px;
     left: auto;
-    width: 200px;
+    width: 150px;
     background: whitesmoke;
     display: flex;
     justify-content: center;
     height: fit-content;
     padding: 0;
-    box-shadow: 0 0 5px 1px teal;
     border-radius: 5px;
-    right: 4%;
+    right: 5%;
   }
 
   .account-links {
     text-decoration: none;
     color: rgb(0, 65, 65);
     background: whitesmoke;
-    padding: 15px 20px;
+    padding: 12px 15px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     overflow: hidden;
     background: linear-gradient(to left, whitesmoke 50%, teal 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
-    box-shadow: 0 0 5px 1px teal;
+    box-shadow: 0 0 1px 1px teal;
+    border-radius: 5px;
   }
 
   .account-links:hover {
@@ -203,16 +204,13 @@
   /* Menu Icon */
 
   .nav-menu-div {
-    left: auto;
     width: 100%;
     display: flex;
-    height: 99%;
+    height: 100%;
     flex-direction: column;
     position: absolute;
     overflow-y: auto;
-    padding-right: 5px;
     border-radius: 5px;
-    box-shadow: 0 0 5px 1px teal;
   }
 
   .category-header {
@@ -220,22 +218,23 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 15px 20px;
+    padding: 12px 15px;
     color: rgb(0, 65, 65);
-    font-size: 22px;
+    font-size: 14px;
     background: linear-gradient(to left, #008080, #00CED1);
-    color: whitesmoke;
+    color: rgb(255, 249, 141);
   }
 
   .slide-menu-style {
     position: absolute;
-    top: 58px;
+    top: 54px;
     left: auto;
     right: 0;
-    width: 400px;
+    width: 300px;
     height: 90vh;
     z-index: 2000;
     text-align: right;
+    background-color: bisque;
   }
 
   .category-links {
@@ -243,13 +242,13 @@
     color: rgb(0, 65, 65);
     padding: 0;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     background: linear-gradient(to right, whitesmoke 50%, teal 50%) left;
     background-size: 200%;
     transition: .3s ease-out;
     width: 100%;
-    padding: 15px 20px;
-    box-shadow: 0 0 5px 1px teal;
+    padding: 12px 15px;
+    margin-left: auto;
   }
 
   .category-list {
@@ -257,9 +256,11 @@
     background: none;
     font-weight: 600;
     border-radius: 5px;
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex;
+    box-shadow: 0 0 1px 1px teal;
+    border-radius: 5px;
   }
 
   .category-links:hover {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import Link from 'next/link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,32 +7,43 @@ import 'slick-carousel/slick/slick-theme.css';
 const bannerDisplay = [
   {
     image: '/images/david.jpg',
-    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.',
+    name: 'James Bond',
+    date: '20th Feedback, 2024',
   },
   {
     image: '/images/sign-in.jpg',
-    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.',
+    name: 'James Bond',
+    date: '20th Feedback, 2024',
   },
   {
     image: '/images/sign-up.jpg',
-    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.',
+    name: 'James Bond',
+    date: '20th Feedback, 2024',
   },
   {
     image: '/images/music.jpg',
-    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.',
+    name: 'James Bond',
+    date: '20th Feedback, 2024',
   },
   {
     image: '/images/reset.jpg',
-    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
-    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia',
+    header: 'Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.',
+    name: 'James Bond',
+    date: '20th Feedback, 2024',
   },
 ];
 
 export default class AsNavFor extends Component {
+
     constructor(props) {
       super(props);
       this.state = {
@@ -52,7 +63,6 @@ render() {
 
   return (
     <div className="banner-container">
-      <div className="banner-left-div">
         <Slider
                 className="main-slider"
                 asNavFor={this.state.nav2}
@@ -69,40 +79,30 @@ render() {
                 <img src={b.image} alt="" className="banner-img" />
                 <div className="banner-link-description">
                     <h2 className="banner-link-header">{b.header}</h2>
+                    <p className="banner-link-para">{b.para}</p>
+                    <span className="featured-span">
+                        <img src={b.image} alt=""  className="featured-author-img"/>
+                        <p>{b.name} --- {b.date}</p>
+                    </span>
                 </div>
               </Link>
             </div>
           ))}
         </Slider>
-        <Slider  
-                className="thumbnail-slider"
-                asNavFor={this.state.nav1}
-                ref={slider => (this.slider2 = slider)}
-                slidesToShow={5}
-                swipeToSlide={true}
-                focusOnSelect={true}
-        >
-          {bannerDisplay.map((b) => (
-            <div className='thumbnail-div-container'
-            >
-              <img src={b.image} alt="" className="thumbnail-img" style={{ cursor: 'pointer' }} />
-            </div>
-          ))}
-        </Slider>
-      </div>
 
-      <div className="banner-right-div">
-            <p className="banner-right-div-header">POPULAR ARTICLES</p>
-            {bannerDisplay.map((b) => (
-                <Link href="" className="trending-div">
-                    <img src={b.image} alt="image" className="trending-img" />
-                    <div className="trending-div-content">
-                        <h2 className="trending-header">{b.header}</h2>
-                        <p className="trending-para">{b.para}</p>
-                    </div>
-                </Link>
-            ))}
-        </div>
+      <div className="thumbnail-slider">
+        {bannerDisplay.map((b) => (
+          <Link href="" className='thumbnail-link-container'>
+            <img src={b.image} alt="" className="thumbnail-img" style={{ cursor: 'pointer' }} />
+            <div className="thumbnail-link-content">
+              <h2 className="thumbnail-link-header">{b.header}</h2>
+              <span className="latest-span">
+                  <p>{b.name} --- {b.date}</p>
+              </span>
+            </div>
+          </Link>
+        ))}
+      </div>
 
     </div>
   );
