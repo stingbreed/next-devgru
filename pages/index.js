@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/navbar'
 import Banner from './components/banner'
+import Carousel from './components/carousel'
 import Featured from './components/featured'
 import FeaturedComments from './components/featuredComments'
 import Feedback from './components/feedback'
@@ -14,7 +15,7 @@ function HomePage() {
       <div className="navbar-div">
         <Navbar />
       </div>
-      <div className="bottom-navbar-div">
+      {/* <div className="bottom-navbar-div">
             <p className="bottom-navbar-para">
               <span style={{ color : 'red' }}>D</span>
               <span style={{ color : 'orange' }}>E</span>
@@ -24,9 +25,9 @@ function HomePage() {
               <span style={{ color : 'purple' }}>U</span>
             </p>
             <p className="bottom-navbar-para2">Advancing your career life through professional insights.</p>
-        </div>
+        </div> */}
       <div className="banner-div">
-        <Banner />
+        <Carousel />
       </div>
       <div className="introduction-div">
         <Introduction />
